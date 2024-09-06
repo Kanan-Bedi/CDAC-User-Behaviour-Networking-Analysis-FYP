@@ -30,4 +30,4 @@ The system's effectiveness will be evaluated using various metrics, such as Prec
 The successful implementation of this project will result in a robust User Behavior Analytics system capable of detecting insider threats, with potential scalability for larger environments and integration with advanced visual analytics tools.
 
  ## Conclusion:
-This project aims to enhance network security by leveraging advanced machine learning techniques to monitor and analyze user behavior, adding an additional layer of protection against insider threats. The system is designed to be scalable, accurate, and integrative, with future prospects for further refinement of anomaly detection algorithms.
+This project aims to enhance network security by using advanced machine learning techniques to monitor and analyze user behavior, adding an additional layer of protection against insider threats. The system is designed to be scalable, accurate, and integrative, with future prospects for further refinement of anomaly detection algorithms.
