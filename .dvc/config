@@ -1,0 +1,5 @@
+[core]
+    remote = azure-remote
+['remote "azure-remote"']
+    url = azure://cert-dataset
+    connection_string = DefaultEndpointsProtocol=https;AccountName=uebaproject;AccountKey=8Ic7tE61XLk0Os0lxzdKo3PMFHVFHpn8FP4o9vh8R32j9emfUILya0gQhPYJhJq07BMtSn/ARDWd+ASt6Jr9ig==;EndpointSuffix=core.windows.net
