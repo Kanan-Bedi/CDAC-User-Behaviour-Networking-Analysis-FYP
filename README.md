@@ -26,6 +26,9 @@ Deployment: Deploy the system using Docker and Kubernetes for scalability.
 ## Testing & Optimization:
 The system's effectiveness will be evaluated using various metrics, such as Precision, Recall, F1-Score for the deep learning models, and Silhouette Score and Davies-Bouldin Index for clustering algorithms.
 
+## Project Workflow
+![Project Workflow](https://github.com/Kanan-Bedi/CDAC-User-Behaviour-Networking-Analysis-FYP/blob/main/MlOps%20Workflow.jpeg?raw=true)
+
 ## Project Outcome:
 The successful implementation of this project will result in a robust User Behavior Analytics system capable of detecting insider threats, with potential scalability for larger environments and integration with advanced visual analytics tools.
 
