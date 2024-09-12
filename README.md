@@ -29,28 +29,10 @@ The system's effectiveness will be evaluated using various metrics, such as Prec
 ## Data Flow and Model Lifecycle
 ![Project Workflow](https://github.com/Kanan-Bedi/CDAC-User-Behaviour-Networking-Analysis-FYP/blob/main/MlOps%20Workflow.jpeg?raw=true)
 
-### Data Flow
-- **Source**: Data is ingested from **Azure Blob Storage**.
-- **Preprocessing Pipelines**:
-  - **Tokenization** for BERT/RoBERTa models.
-  - **Scaling** for traditional machine learning models.
-
-### Model Training
-- **Model Types**:
-  - **Supervised** learning models.
-  - **Unsupervised** learning models.
-  - **Deep Learning** models.
-  - **Transfer Learning** models.
-- **Real-Time Monitoring**: During training, real-time logging and performance metrics are monitored.
-
-### Continuous Monitoring
-- **Model Drift Detection**: Continuous monitoring to detect drift in model performance.
-- **Alerts**: Automated alerting for performance degradation.
-
-### Automated Retraining and Redeployment
-- **Retraining Trigger**: When model performance drops below a specified threshold.
-- **Automated Pipeline**: Retraining and redeployment of the model are automated to ensure up-to-date performance.
-
+- **Data flows**: From Azure Blob to preprocessing pipelines where tokenization (for BERT/RoBERTa) and scaling (for traditional ML) are applied.
+- **Model training**: Includes supervised, unsupervised, deep learning, and transfer learning models, with real-time monitoring.
+- **Continuous monitoring**: Involves logging and alerting for model drift and performance degradation.
+- **Automated retraining and redeployment**: Triggered when the performance drops below a certain threshold.
 
 ## Project Outcome:
 The successful implementation of this project will result in a robust User Behavior Analytics system capable of detecting insider threats, with potential scalability for larger environments and integration with advanced visual analytics tools.
