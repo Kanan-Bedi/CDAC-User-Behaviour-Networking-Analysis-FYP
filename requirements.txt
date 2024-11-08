@@ -5,7 +5,7 @@ scikit-learn==1.2.2
 tensorflow==2.13.0
 torch==2.0.1
 transformers==4.35.0
-bert-for-tf2==0.14.9
+bert-for-tf2==0.14.7
 roberta-transformers==1.0.1
 matplotlib==3.7.2
 seaborn==0.12.2
@@ -23,6 +23,6 @@ pyyaml==6.0.1
 mlxtend==0.22.0
 autopep8==2.0.4
 streamlit==1.24.0
-setuptools>=70.0.0
+setuptools==68.0.0
 wheel>=0.41.0
 setuptools_scm>=7.0.0
