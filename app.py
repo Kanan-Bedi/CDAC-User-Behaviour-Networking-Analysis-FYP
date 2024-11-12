@@ -1,13 +1,25 @@
+import os
+from azure.storage.blob import BlobServiceClient
 import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load CSV dataset
+# Set up Blob Storage connection
+connection_string = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
+blob_service_client = BlobServiceClient.from_connection_string(connection_string)
+
 @st.cache_data
 def load_data():
-    data = pd.read_csv('/Users/kananbedi/Downloads/models/updated_final_4.2 (1).csv')
+    # Access the blob client
+    container_name = "ueba"  # Replace with your container name
+    blob_name = "updated_final_4.2.csv"  # Replace with your blob name (CSV file)
+    blob_client = blob_service_client.get_blob_client(container=container_name, blob=blob_name)
+    
+    # Download CSV data directly into a DataFrame
+    with blob_client.download_blob() as blob_data:
+        data = pd.read_csv(blob_data)
     return data
 
 data = load_data()
@@ -68,6 +80,6 @@ elif action_choice == "Time-based Behavior Analysis":
 
 # Instructions to run Streamlit app
 st.sidebar.title("Instructions")
-st.sidebar.write("1. Save this code as `app.py`.")
-st.sidebar.write("2. In the terminal, run: `streamlit run app.py`.")
+st.sidebar.write("1. Save this code as app.py.")
+st.sidebar.write("2. In the terminal, run: streamlit run app.py.")
 st.sidebar.write("3. Use the sidebar to select an analysis to view.")
