@@ -2,9 +2,8 @@ import os
 from azure.storage.blob import BlobServiceClient
 import streamlit as st
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 import seaborn as sns
+import matplotlib.pyplot as plt
 
 # Set up Blob Storage connection
 connection_string = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
@@ -78,8 +77,8 @@ elif action_choice == "Time-based Behavior Analysis":
     else:
         st.write("The dataset does not contain a 'day' column for time-based analysis.")
 
-# Instructions to run Streamlit app
+# Sidebar instructions
 st.sidebar.title("Instructions")
-st.sidebar.write("1. Save this code as app.py.")
-st.sidebar.write("2. In the terminal, run: streamlit run app.py.")
+st.sidebar.write("1. Save this code as `app.py`.")
+st.sidebar.write("2. Run: `streamlit run app.py` in your terminal.")
 st.sidebar.write("3. Use the sidebar to select an analysis to view.")
